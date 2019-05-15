@@ -21,6 +21,7 @@ final class HalClient implements HalClientInterface
         'application/json',
         'application/vnd.error+json',
         'application/hal+json;charset=utf-8',
+        'application/hal+json;charset=UTF-8',
     ];
 
     public function __construct($rootUrl, HttpClientInterface $httpClient = null)
