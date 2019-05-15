@@ -19,7 +19,8 @@ final class HalClient implements HalClientInterface
     private static $validContentTypes = [
         'application/hal+json',
         'application/json',
-        'application/vnd.error+json'
+        'application/vnd.error+json',
+        'application/hal+json;charset=utf-8',
     ];
 
     public function __construct($rootUrl, HttpClientInterface $httpClient = null)
