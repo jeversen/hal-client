@@ -21,7 +21,7 @@ final class HalResourceFactory
         HalClientInterface $client,
         RequestInterface $request,
         ResponseInterface $response,
-        $ignoreInvalidContentType = false
+        $ignoreInvalidContentType = true
     ) {
         if (204 === $response->getStatusCode()) {
             // No-Content response
